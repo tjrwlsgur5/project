@@ -1,0 +1,1 @@
+$("h1 a").attr("href", "../index.html");

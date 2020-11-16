@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Avenir 회원가입</title>
+    <link rel="stylesheet" href="../css/Reset.css">
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <div id="signup_wrap">
+        <section id="signup_main">
+            <h1><a href="#">Avenir</a></h1>
+            <section id="signup" class="section_size">
+                <form action="/signup" method="post">
+                    <fieldset>
+                        <legend>회원가입</legend>
+                        <p> 
+                            <label>
+                                <input type="text" name="id" class="focus_on" placeholder="아이디" maxlength="12"><span>아이디 입력</span>
+                            </label>
+                            <input type="submit" value="아이디중복확인"> <input type="checkbox">
+                        </p>
+                        <h2>4~12자의 영문 대소문자와 숫자로만 입력</h2>
+                        <p>이미 사용중인 아이디입니다.</p>
+                        <label><input type="password" name="password" class="focus_on" placeholder="비밀번호" maxlength="12"><span>비밀번호 입력</span></label>
+                        <h2>4~12자의 영문 대소문자와 숫자로만 입력</h2>
+                        <label><input type="password" name="passwordcheck" class="focus_on" placeholder="비밀번호" maxlength="12"><span>비밀번호 확인</span></label>
+                        <p>비밀번호가 일치하지 않습니다.</p>
+                        <label><input type="text" name="name" class="focus_on" placeholder="이름"><span>이름 입력</span></label>
+                        <p></p>
+                        <label><input type="email" name="email" class="focus_on" placeholder="이메일" maxlength="20"><span>이메일 입력</span></label>
+                        <p>이미 사용중인 이메일입니다.</p>
+                        <label><input type="number" name="phonenum" class="focus_on" placeholder="전화번호" maxlength="18"><span>전화번호 입력</span></label>
+                        <p>이미 사용중인 전화번호입니다.</p>
+                        <p class="checkboxform">
+                            <label><input type="checkbox" name="usertype" value="기업">회사</label>
+                            <label><input type="checkbox" name="usertype" value="개인">개인</label>
+                        </p>
+                        <p class="checkboxform"> 
+                            <label><input type="checkbox" name="personalagree" value="동의함"><a href="#" id="pup_on">개인정보 수집 이용동의</a></label>
+                         </p>
+                        <input type="submit" value="회원가입">
+                    </fieldset>
+                </form>
+            </section>
+        </section>
+    </div>
+</body>
+</html>
